@@ -25,6 +25,7 @@ ReactDOM.render(
     <p>
       Copyright
       {/* alternative method of concatination */}
+      {/* funcitons are not valid as react child */}
       {" " + CURRENTYEAR + " " + time}
     </p>
   </div>,
