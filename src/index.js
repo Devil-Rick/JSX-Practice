@@ -11,12 +11,22 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const YOURNAME = "Saptarshi";
+const LName = "Dhibar";
+const month = "December";
 const CURRENTYEAR = "2020";
 
 ReactDOM.render(
   <div>
-    <p>Created by {YOURNAME}</p>
-    <p>Copyright {CURRENTYEAR}</p>
+    <p>
+      Created by
+      {/* first method of concatination */}
+      {YOURNAME} {LName}
+    </p>
+    <p>
+      Copyright
+      {/* alternative method of concatination */}
+      {CURRENTYEAR + " " + month}
+    </p>
   </div>,
   document.getElementById("root")
 );
