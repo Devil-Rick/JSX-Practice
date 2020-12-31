@@ -12,8 +12,8 @@ import ReactDOM from "react-dom";
 
 const YOURNAME = "Saptarshi";
 const LName = "Dhibar";
-const month = "December";
-const CURRENTYEAR = "2020";
+const time = new Date().getDate();
+const CURRENTYEAR = new Date().getFullYear(); //this method is used to get the current year
 
 ReactDOM.render(
   <div>
@@ -25,7 +25,7 @@ ReactDOM.render(
     <p>
       Copyright
       {/* alternative method of concatination */}
-      {CURRENTYEAR + " " + month}
+      {" " + CURRENTYEAR + " " + time}
     </p>
   </div>,
   document.getElementById("root")
